@@ -1,0 +1,43 @@
+name: ci
+
+# Keep the bucket installable. Every push and pull request validates that each
+# manifest under bucket/ is well-formed JSON carrying the keys Scoop needs
+# (version, homepage, license, and per-architecture url/hash/bin). A malformed
+# manifest fails here rather than by a user's failed `scoop install`. GoReleaser
+# commits straight to the default branch, so the push trigger also acts as a
+# post-release tripwire. No Windows runner is required for this check.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate manifests
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in bucket/*.json; do
+            echo "checking $f"
+            jq empty "$f" || { echo "  not valid JSON"; fail=1; continue; }
+            for key in version homepage license architecture; do
+              jq -e "has(\"$key\")" "$f" >/dev/null \
+                || { echo "  missing top-level key: $key"; fail=1; }
+            done
+            for arch in 64bit arm64; do
+              for sub in url hash bin; do
+                jq -e ".architecture[\"$arch\"] | has(\"$sub\")" "$f" >/dev/null \
+                  || { echo "  $arch missing: $sub"; fail=1; }
+              done
+            done
+          done
+          exit $fail

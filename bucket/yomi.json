@@ -1,0 +1,31 @@
+{
+  "version": "0.3.0",
+  "description": "Read any web page, or a whole website, into clean Markdown",
+  "homepage": "https://github.com/tamnd/yomi",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/tamnd/yomi/releases/download/v0.3.0/yomi_0.3.0_windows_amd64.zip",
+      "hash": "c451bac2101d16ff58b2c9614ef31386dd52213c6929136555fda30700a31c52",
+      "bin": "yomi.exe"
+    },
+    "arm64": {
+      "url": "https://github.com/tamnd/yomi/releases/download/v0.3.0/yomi_0.3.0_windows_arm64.zip",
+      "hash": "524cbcef54d150dad91b255380b25b4e38c45d1e78e8642a7d7d14a487209cd9",
+      "bin": "yomi.exe"
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/tamnd/yomi"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/tamnd/yomi/releases/download/v$version/yomi_$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/tamnd/yomi/releases/download/v$version/yomi_$version_windows_arm64.zip"
+      }
+    }
+  }
+}

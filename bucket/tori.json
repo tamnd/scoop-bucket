@@ -1,0 +1,31 @@
+{
+  "version": "0.2.2",
+  "description": "Build offline, browsable archives of X (Twitter) content",
+  "homepage": "https://github.com/tamnd/tori",
+  "license": "AGPL-3.0-only",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/tamnd/tori/releases/download/v0.2.2/tori_0.2.2_windows_amd64.zip",
+      "hash": "3803dc50513ebf27a4b0629d7bb5cb1d9d7dd11cd7dbbcd8efed8f2c35c03b0e",
+      "bin": "tori.exe"
+    },
+    "arm64": {
+      "url": "https://github.com/tamnd/tori/releases/download/v0.2.2/tori_0.2.2_windows_arm64.zip",
+      "hash": "c3400d1a4fde0684c6562f23212c6d82841b2731331e030f0ef89bac0069c540",
+      "bin": "tori.exe"
+    }
+  },
+  "checkver": {
+    "github": "https://github.com/tamnd/tori"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/tamnd/tori/releases/download/v$version/tori_$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/tamnd/tori/releases/download/v$version/tori_$version_windows_arm64.zip"
+      }
+    }
+  }
+}

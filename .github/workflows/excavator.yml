@@ -1,0 +1,29 @@
+name: excavator
+
+# Optional autoupdate. On a schedule, the upstream ScoopInstaller Excavator
+# reads each manifest's checkver/autoupdate metadata, finds newer releases, and
+# commits the bumped version and hashes back to this bucket. It is inert until a
+# token with write access to this repo is provided as the GITHUB_TOKEN below
+# (the default token cannot push). Even without it, the checkver/autoupdate
+# fields let anyone run `scoop update` locally, and the release pipelines keep
+# the manifests current on every tag. Disabled by default to avoid noisy
+# scheduled runs on a fresh repo; enable by setting a TOKEN secret.
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    if: ${{ vars.ENABLE_EXCAVATOR == 'true' }}
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ScoopInstaller/GithubActions@v2
+        with:
+          token: ${{ secrets.EXCAVATOR_TOKEN || secrets.GITHUB_TOKEN }}
+          skip_updated: "1"
