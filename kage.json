@@ -1,0 +1,22 @@
+{
+    "version": "0.3.7",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/kage/releases/download/v0.3.7/kage_0.3.7_windows_amd64.zip",
+            "bin": [
+                "kage.exe"
+            ],
+            "hash": "3f0de4700e9ab2c5e50b2a7dc88f6a9dc44fef66acaa8e0d46e0ef210426241f"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/kage/releases/download/v0.3.7/kage_0.3.7_windows_arm64.zip",
+            "bin": [
+                "kage.exe"
+            ],
+            "hash": "3d63fe86a4862df4fdaa8e8f87fae2793b8cf43e3339cc559aff14b6d7ffa93d"
+        }
+    },
+    "homepage": "https://github.com/tamnd/kage",
+    "license": "MIT",
+    "description": "Clone any website for offline viewing, with the JavaScript stripped out"
+}
