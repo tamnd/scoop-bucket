@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/kv/releases/download/v0.1.0/kv_0.1.0_windows_amd64.zip",
+            "bin": [
+                "kv.exe"
+            ],
+            "hash": "866892e26442c451c836602497b30d588f5db9e6b343d5d55c853ea04e11c392"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/kv/releases/download/v0.1.0/kv_0.1.0_windows_arm64.zip",
+            "bin": [
+                "kv.exe"
+            ],
+            "hash": "2e8e501baa7bd85667c39985be96a29ca5e5db4d29f2ad929642e0c302532de0"
+        }
+    },
+    "homepage": "https://github.com/tamnd/kv",
+    "license": "Apache-2.0",
+    "description": "Embeddable ordered key/value database for Go, in a single file with zero dependencies"
+}
