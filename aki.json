@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/aki/releases/download/v0.1.0/aki_0.1.0_windows_amd64.zip",
+            "bin": [
+                "aki.exe"
+            ],
+            "hash": "ded573b703784629db284535aea50f2a9fbc9693c98b7ffa78e1fc8509309082"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/aki/releases/download/v0.1.0/aki_0.1.0_windows_arm64.zip",
+            "bin": [
+                "aki.exe"
+            ],
+            "hash": "8f3b5832954e885946825889df7693ce7f13d824f11a177492c25de499f7f77c"
+        }
+    },
+    "homepage": "https://github.com/tamnd/aki",
+    "license": "BSD-3-Clause",
+    "description": "A Redis-compatible database in a single file"
+}
