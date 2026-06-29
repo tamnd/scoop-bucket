@@ -1,0 +1,22 @@
+{
+    "version": "0.4.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.4.1/ccrawl_0.4.1_windows_amd64.zip",
+            "bin": [
+                "ccrawl.exe"
+            ],
+            "hash": "449028f3f88da462d886c7e672196a771bce725b91c553521bb57d4e32117edb"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.4.1/ccrawl_0.4.1_windows_arm64.zip",
+            "bin": [
+                "ccrawl.exe"
+            ],
+            "hash": "6113c440a1f2fb1eae0c8f7cf1974017ec7fc96799bf6460c80eda61f4b70ba3"
+        }
+    },
+    "homepage": "https://github.com/tamnd/ccrawl-cli",
+    "license": "Apache-2.0",
+    "description": "A fast, friendly command line for Common Crawl"
+}
