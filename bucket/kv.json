@@ -1,19 +1,19 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tamnd/kv/releases/download/v0.3.0/kv_0.3.0_windows_amd64.zip",
+            "url": "https://github.com/tamnd/kv/releases/download/v0.3.1/kv_0.3.1_windows_amd64.zip",
             "bin": [
                 "kv.exe"
             ],
-            "hash": "8d0f7b39297a07db96bd4937d96f1db34465a44f62cbbafb0df3579855f9edcd"
+            "hash": "6da977f13b2060e3972d30d12f100a8d24fb0f149f1e92397c8335f13f597b54"
         },
         "arm64": {
-            "url": "https://github.com/tamnd/kv/releases/download/v0.3.0/kv_0.3.0_windows_arm64.zip",
+            "url": "https://github.com/tamnd/kv/releases/download/v0.3.1/kv_0.3.1_windows_arm64.zip",
             "bin": [
                 "kv.exe"
             ],
-            "hash": "f0c07b20047a0cb95a71946596dad98d379a399234234ba6fa7ed252ef61d851"
+            "hash": "f9f6fe9161d303ec2d0ab44bc164aba1b9b683218ff13d623d04d633d59eab3c"
         }
     },
     "homepage": "https://github.com/tamnd/kv",
