@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/tomo/releases/download/v0.1.0/tomo_0.1.0_windows_amd64.zip",
+            "bin": [
+                "tomo.exe"
+            ],
+            "hash": "1d169d86db59e0a5b809a467793479ed700ae921f98d847ac6f07d6b5b85ff73"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/tomo/releases/download/v0.1.0/tomo_0.1.0_windows_arm64.zip",
+            "bin": [
+                "tomo.exe"
+            ],
+            "hash": "87a083610c391968530996fdcffa312d68af976db9ff20d4fd3a6c652bdee693"
+        }
+    },
+    "homepage": "https://github.com/tamnd/tomo",
+    "license": "MIT",
+    "description": "Your personal AI agent, one Go binary"
+}
