@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/kaku/releases/download/v0.1.0/kaku_0.1.0_windows_amd64.zip",
+            "bin": [
+                "kaku.exe"
+            ],
+            "hash": "3a854a1a93dfc946aa14459876e6b6a2b236df6a3a0fce4c8bd37b88c3e504fc"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/kaku/releases/download/v0.1.0/kaku_0.1.0_windows_arm64.zip",
+            "bin": [
+                "kaku.exe"
+            ],
+            "hash": "b95ffe3894faa18d51582c4c517f2a2b6a07ac503fe5722b115a8024bb441e14"
+        }
+    },
+    "homepage": "https://github.com/tamnd/kaku",
+    "license": "MIT",
+    "description": "A coding agent that lives in your terminal"
+}
