@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tamnd/shirabe/releases/download/v0.1.0/shirabe_0.1.0_windows_amd64.zip",
+            "bin": [
+                "shirabe.exe"
+            ],
+            "hash": "891322bcf25a0709703263e3ed0967d80f64ed5bd3888df51eb5d87536cc0c9f"
+        },
+        "arm64": {
+            "url": "https://github.com/tamnd/shirabe/releases/download/v0.1.0/shirabe_0.1.0_windows_arm64.zip",
+            "bin": [
+                "shirabe.exe"
+            ],
+            "hash": "d7cc59968ffa2fb35535d73b2c5b31a91c1e7ef5632701b0b324a4e66be49cb5"
+        }
+    },
+    "homepage": "https://github.com/tamnd/shirabe",
+    "license": "MIT",
+    "description": "One search box over every source you already have, rendered as rich cards"
+}
