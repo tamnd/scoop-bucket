@@ -1,19 +1,19 @@
 {
-    "version": "0.5.2",
+    "version": "0.5.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.5.2/ccrawl_0.5.2_windows_amd64.zip",
+            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.5.3/ccrawl_0.5.3_windows_amd64.zip",
             "bin": [
                 "ccrawl.exe"
             ],
-            "hash": "0680b3ef67e722e1766c9092f2a5dae6b8120018c8431adb308886fe8e835aa4"
+            "hash": "9b91c79c8ac9e12d2e4928422e7d705877975ef268dcc4bd107fc024ab40c1f6"
         },
         "arm64": {
-            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.5.2/ccrawl_0.5.2_windows_arm64.zip",
+            "url": "https://github.com/tamnd/ccrawl-cli/releases/download/v0.5.3/ccrawl_0.5.3_windows_arm64.zip",
             "bin": [
                 "ccrawl.exe"
             ],
-            "hash": "eb97e5f1ddca6dd9dee1776acebf3dadc6a355b0cd97f78b41ba9ef756167af8"
+            "hash": "2595997006d5a667f6f590ebe42315a42e69090580b1fd9a259ff7ab8cc96e0b"
         }
     },
     "homepage": "https://github.com/tamnd/ccrawl-cli",
