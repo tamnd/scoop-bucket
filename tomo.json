@@ -1,19 +1,19 @@
 {
-    "version": "0.2.9",
+    "version": "0.2.10",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tamnd/tomo/releases/download/v0.2.9/tomo_0.2.9_windows_amd64.zip",
+            "url": "https://github.com/tamnd/tomo/releases/download/v0.2.10/tomo_0.2.10_windows_amd64.zip",
             "bin": [
                 "tomo.exe"
             ],
-            "hash": "7c8c3890d943040703042f46c9ecce2c5f80ecfe51db8cac8e494faff46f8504"
+            "hash": "bb05fbb16db66dd9c3b1de018fb95df659a2538b95bd7e29a75dde83422d83f8"
         },
         "arm64": {
-            "url": "https://github.com/tamnd/tomo/releases/download/v0.2.9/tomo_0.2.9_windows_arm64.zip",
+            "url": "https://github.com/tamnd/tomo/releases/download/v0.2.10/tomo_0.2.10_windows_arm64.zip",
             "bin": [
                 "tomo.exe"
             ],
-            "hash": "072d7a5998ae63784648a3c26a04f546908b45ea7f4a8ccf0ebc98cc5c378970"
+            "hash": "c15802aa984cad0899e10969fbeed2b0b57eae6ebc6af41deff0b8f8c6b95349"
         }
     },
     "homepage": "https://github.com/tamnd/tomo",
